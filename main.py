@@ -1,10 +1,7 @@
+from stats import word_count
+
 def main():
   word_length = str
-
-  def word_count(text):
-    words = text.split()
-    word_length = len(words)
-    return(f"{word_length} words found in the document")
 
   def character_counts(text):
     # characters contains all the characters to match in the 
