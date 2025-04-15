@@ -1,9 +1,12 @@
 from stats import word_count
+import sys
 
 def main():
+  if len(sys.argv) != 2:
+    print("Usage: python3 main.py <path_to_book>")  
   word_length = str
-  book = "frankenstein.txt"
-  with open(f"books/{book}") as f:
+  book = sys.argv[1]
+  with open(f"{book}") as f:
     file_contents = f.read()
   #print(file_contents)
 
@@ -29,7 +32,8 @@ def main():
     for k, v in characters.items():
       print(f"{k}: {v}")
 
+
   print(word_count(file_contents))
   print(character_counts(file_contents))
- 
+
 main()
