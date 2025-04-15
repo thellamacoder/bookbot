@@ -27,7 +27,7 @@ def main():
     # print(characters)
     print(f"--- Begin report of books/{book} ---")
     for k, v in characters.items():
-      print(f"The '{k}' character was found {v} times")
+      print(f"{k}: {v}")
 
   print(word_count(file_contents))
   print(character_counts(file_contents))
