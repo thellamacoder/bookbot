@@ -7,7 +7,7 @@ def main():
     file_contents = f.read()
   #print(file_contents)
 
-  print(word_count(file_contents))
+
 
   def character_counts(text):
     # characters contains all the characters to match in the 
@@ -15,7 +15,7 @@ def main():
     words = text.lower()
 
     # cycle through all the keys in the characters dictionary and set the times variable to 0
-  ''' for k in characters.keys():
+    for k in characters.keys():
       # here is where you count(items[k]) in words
       times = 0
       # cycle through the words in the source text and iterate the times variable each time that key/character appears
@@ -27,8 +27,9 @@ def main():
     # print(characters)
     print(f"--- Begin report of books/{book} ---")
     for k, v in characters.items():
-      print(f"The '{k}' character was found {v} times")'''
+      print(f"The '{k}' character was found {v} times")
 
-  # character_counts(file_contents)
+  print(word_count(file_contents))
+  print(character_counts(file_contents))
  
 main()
